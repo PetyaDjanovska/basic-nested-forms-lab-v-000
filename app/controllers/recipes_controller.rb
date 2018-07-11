@@ -25,6 +25,5 @@ class RecipesController < ApplicationController
       :name
     ]
     )
-    
   end
 end
