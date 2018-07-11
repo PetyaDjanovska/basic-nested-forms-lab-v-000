@@ -4,6 +4,8 @@
   <%= f.fields_for :ingredients do |ingr| %>
     <%= ingr.label :quantity %>
     <%= ingr.text_field :quantity %></br>
+    <%= ingr.label :quantity %>
+    <%= ingr.text_field :quantity %>
     <% end %>
   <%= f.submit %>
 <% end %>
