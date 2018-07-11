@@ -18,6 +18,8 @@ class RecipesController < ApplicationController
     redirect_to recipes_path
   end
 
+private
+
   def recipe_params
     params.require(:recipe).permit(
     :title,
