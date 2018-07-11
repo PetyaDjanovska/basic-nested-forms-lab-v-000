@@ -14,7 +14,8 @@ class RecipesController < ApplicationController
   end
 
   def create
-    binding.pry
+    recipe = Recipe.create(recipe_params)
+    redirect_to people_path
   end
 
   def recipe_params
@@ -25,5 +26,6 @@ class RecipesController < ApplicationController
       :name
     ]
     )
+    
   end
 end
